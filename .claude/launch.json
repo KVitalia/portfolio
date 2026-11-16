@@ -3,7 +3,7 @@
   "configurations": [
     {
       "name": "portfolio-dev",
-      "runtimeExecutable": "/Users/vitaliia.kumeska/Downloads/portfolio/.claude/dev-server.sh",
+      "runtimeExecutable": "/Users/vitaliia.kumeska/portfolio/.claude/dev-server.sh",
       "runtimeArgs": [],
       "port": 3000
     }
