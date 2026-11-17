@@ -67,7 +67,9 @@ export default function Cases() {
         CASES
       </h2>
 
-      <div className="mt-10 flex flex-col border-t border-[#1e1e1e]/15 sm:flex-row sm:items-stretch">
+      <div className="relative left-1/2 mt-10 w-screen -translate-x-1/2 border-t border-[#1e1e1e]/15" />
+
+      <div className="flex flex-col sm:flex-row sm:items-stretch">
         {cases.map((item, index) => {
           const isOpen = hoveredIndex === index;
 
