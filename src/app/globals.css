@@ -16,6 +16,6 @@ body {
   background: var(--background);
   background-image: url("/paper-texture.jpg");
   background-repeat: repeat;
-  background-size: 900px;
+  background-size: 700px;
   color: var(--foreground);
 }
