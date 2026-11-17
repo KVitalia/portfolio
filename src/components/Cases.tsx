@@ -76,9 +76,13 @@ export default function Cases() {
               key={item.number}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
-              className={`overflow-hidden border-b border-[#1e1e1e]/15 px-6 py-10 transition-[width] duration-300 ease-out last:border-b-0 sm:h-[700px] sm:flex-none sm:border-r sm:border-b-0 sm:last:border-r-0 ${
-                isOpen ? "sm:w-[480px]" : "sm:w-[320px]"
-              }`}
+              className="overflow-hidden border-b border-[#1e1e1e]/15 px-6 py-10 last:border-b-0 sm:h-[700px] sm:border-r sm:border-b-0 sm:last:border-r-0"
+              style={{
+                transition: "flex-grow 300ms ease",
+                flexGrow: isOpen ? 2 : 1,
+                flexShrink: 1,
+                flexBasis: "0%",
+              }}
             >
               <div
                 className={`flex gap-1 ${
