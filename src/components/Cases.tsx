@@ -12,7 +12,13 @@ type CaseItem = {
 };
 
 const cases: CaseItem[] = [
-  { number: "01", name: "NAME" },
+  {
+    number: "01",
+    name: "NAME",
+    summary: "Website redesign for a small business to simplify the booking journey",
+    role: "Mapped the customer decision flow, redesigned the booking steps, built the prototype",
+    achieved: "Shorter booking flow, clearer next steps, fewer drop-offs before checkout",
+  },
   {
     number: "02",
     name: "APP for Students",
@@ -20,11 +26,21 @@ const cases: CaseItem[] = [
     role: "Created a Teacher Persona, the Flow to assign a task, Persona's Dashboard",
     achieved: "Clear flow of a Teacher Persona, capability to complete the task",
   },
-  { number: "03", name: "NAME" },
-  { number: "04", name: "NAME" },
+  {
+    number: "03",
+    name: "NAME",
+    summary: "Online store redesign to make browsing and checkout easier on mobile",
+    role: "Defined the information architecture, redesigned product pages and checkout",
+    achieved: "Simplified navigation and a shorter, clearer checkout flow",
+  },
+  {
+    number: "04",
+    name: "NAME",
+    summary: "Admin dashboard for managing bookings and daily schedules",
+    role: "Designed the dashboard layout, appointment list, and scheduling flow",
+    achieved: "Faster day-to-day scheduling with fewer manual errors",
+  },
 ];
-
-const NARROW_WIDTH = 320;
 
 function PlaceholderThumb() {
   return (
@@ -51,23 +67,18 @@ export default function Cases() {
         CASES
       </h2>
 
-      <div className="mt-10 flex flex-col border-t border-[#1e1e1e]/15 sm:min-h-[700px] sm:flex-row sm:items-stretch">
+      <div className="mt-10 flex flex-col border-t border-[#1e1e1e]/15 sm:flex-row sm:items-stretch">
         {cases.map((item, index) => {
           const isOpen = hoveredIndex === index;
-          const isNarrow = hoveredIndex !== null && !isOpen;
 
           return (
             <div
               key={item.number}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
-              className="overflow-hidden border-b border-[#1e1e1e]/15 px-6 py-10 last:border-b-0 sm:border-r sm:border-b-0 sm:last:border-r-0"
-              style={{
-                transition: "flex-grow 300ms ease, flex-basis 300ms ease",
-                flexGrow: isNarrow ? 0 : 1,
-                flexShrink: isNarrow ? 0 : 1,
-                flexBasis: isNarrow ? `${NARROW_WIDTH}px` : "0%",
-              }}
+              className={`overflow-hidden border-b border-[#1e1e1e]/15 px-6 py-10 transition-[width] duration-300 ease-out last:border-b-0 sm:h-[700px] sm:flex-none sm:border-r sm:border-b-0 sm:last:border-r-0 ${
+                isOpen ? "sm:w-[480px]" : "sm:w-[320px]"
+              }`}
             >
               <div
                 className={`flex gap-1 ${
