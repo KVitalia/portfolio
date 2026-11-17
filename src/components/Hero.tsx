@@ -5,7 +5,7 @@ const capabilities = ["Research", "Design", "Implement"];
 
 export default function Hero() {
   return (
-    <section className="mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-16 px-6 py-12 sm:px-10 lg:grid-cols-2 lg:py-20">
+    <section className="mx-auto grid w-full max-w-[1512px] grid-cols-1 items-center gap-16 px-6 py-12 sm:px-10 lg:grid-cols-2 lg:py-20">
       <div className="max-w-xl">
         <h1 className="font-sans text-[36px] leading-tight font-normal tracking-[0.02em] text-[#1e1e1e]">
           Design built on how

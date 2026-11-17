@@ -6,7 +6,7 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer id="contact" className="mx-auto w-full max-w-7xl px-6 pt-10 pb-20 sm:px-10">
+    <footer id="contact" className="mx-auto w-full max-w-[1512px] px-6 pt-10 pb-20 sm:px-10">
       <div className="mx-auto w-full max-w-[530px] border-t border-[#1e1e1e]/20" />
 
       <div className="mt-16 flex flex-col items-center gap-4 text-center">
@@ -26,7 +26,7 @@ export default function Footer() {
             <a
               key={link.label}
               href={link.href}
-              className="font-sans text-base font-normal tracking-[0.01em] text-[#e3464b] underline underline-offset-2"
+              className="font-sans text-base font-normal tracking-[0.01em] text-[#e3464b] underline decoration-dotted underline-offset-4"
             >
               {link.label}
             </a>
