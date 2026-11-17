@@ -37,7 +37,7 @@ export default function Hero() {
           style={{
             height: "69.3%",
             backgroundImage:
-              "url('/gradient-card.png'), linear-gradient(135deg, #fbbf24, #f97316, #dc2626)",
+              "url('/gradient-card.jpg'), linear-gradient(135deg, #fbbf24, #f97316, #dc2626)",
             backgroundSize: "cover, cover",
             backgroundPosition: "center, center",
           }}
