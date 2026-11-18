@@ -63,7 +63,7 @@ export default function Cases() {
 
   return (
     <section id="works" className="mx-auto w-full max-w-[1512px] px-6 pt-16 pb-10 sm:px-10">
-      <h2 className="font-sans text-[48px] font-medium tracking-[0.03em] text-[#1e1e1e]">
+      <h2 className="font-sans text-[32px] font-medium tracking-[0.03em] text-[#1e1e1e] sm:text-[40px] lg:text-[48px]">
         CASES
       </h2>
 

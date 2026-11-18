@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section className="mx-auto grid w-full max-w-[1512px] grid-cols-1 items-center gap-16 px-6 py-12 sm:px-10 lg:grid-cols-2 lg:py-20">
       <div className="max-w-xl">
-        <h1 className="font-sans text-[36px] leading-tight font-normal tracking-[0.02em] text-[#1e1e1e]">
+        <h1 className="font-sans text-[26px] leading-tight font-normal tracking-[0.02em] text-[#1e1e1e] sm:text-[32px] lg:text-[36px]">
           Design built on how
           <br />
           people choose
@@ -33,7 +33,7 @@ export default function Hero() {
         style={{ aspectRatio: "555 / 433" }}
       >
         <div
-          className="absolute bottom-0 left-0 flex w-full flex-col justify-center gap-3 pl-8"
+          className="absolute bottom-0 left-0 flex w-full flex-col justify-center gap-1.5 pl-3 sm:gap-3 sm:pl-8"
           style={{
             height: "69.3%",
             backgroundImage:
@@ -45,7 +45,7 @@ export default function Hero() {
           {capabilities.map((item) => (
             <span
               key={item}
-              className="font-sans text-base font-medium tracking-[0.01em] text-[#1e1e1e]"
+              className="font-sans text-[11px] font-medium tracking-[0.01em] text-[#1e1e1e] sm:text-base"
             >
               {item}
             </span>
