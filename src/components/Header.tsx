@@ -33,7 +33,7 @@ export default function Header() {
 
           <Link
             href="#contact"
-            className="shrink-0 border-2 border-[#e3464b] bg-white/50 px-2.5 py-1.5 font-sans text-xs font-medium whitespace-nowrap text-[#1e1e1e] transition-opacity hover:opacity-80 sm:px-4 sm:py-2.5 sm:text-base"
+            className="shrink-0 border-2 border-[#e3464b] bg-white/50 px-3 py-2 font-sans text-sm font-medium whitespace-nowrap text-[#1e1e1e] transition-opacity hover:opacity-80 sm:px-4 sm:py-2.5 sm:text-base"
           >
             Write Me
           </Link>
