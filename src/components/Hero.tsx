@@ -13,7 +13,7 @@ export default function Hero() {
           people choose
         </h1>
 
-        <p className="mt-6 max-w-md font-sans text-[20px] leading-relaxed font-normal tracking-[0.03em] text-[#4d4d4d]">
+        <p className="mt-6 max-w-md font-sans text-base leading-relaxed font-normal tracking-[0.03em] text-[#4d4d4d] sm:text-[18px] lg:text-[20px]">
           I research how people decide to choose a small business, then
           structure the site around that decision, so owners convert more
           visitors into customers — bookings, foot traffic, or online
@@ -45,7 +45,7 @@ export default function Hero() {
           {capabilities.map((item) => (
             <span
               key={item}
-              className="font-sans text-[11px] font-medium tracking-[0.01em] text-[#1e1e1e] sm:text-base"
+              className="font-sans text-[11px] font-bold tracking-[0.01em] text-[#fffdfd] sm:text-base"
             >
               {item}
             </span>

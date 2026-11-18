@@ -17,7 +17,7 @@ export default function Header() {
       <div className="flex w-full items-center justify-between">
         <Link
           href="/"
-          className="font-istok text-[28px] leading-none font-normal text-[#1e1e1e] sm:text-[40px] lg:text-[64px]"
+          className="font-istok text-[28px] leading-none font-bold text-[#e3464b] sm:text-[40px] lg:text-[64px]"
         >
           VITALIA KUMESKA
         </Link>
